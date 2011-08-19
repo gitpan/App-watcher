@@ -22,4 +22,4 @@ recommends:
 requires:
   Filesys::Notify::Simple: 0
   perl: 5.8.8
-version: 0.01
+version: 0.02
