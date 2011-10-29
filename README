@@ -1,23 +1,33 @@
-This is Perl module App::watcher.
+NAME
+    watcher - watch the file updates
 
-INSTALLATION
+SYNOPSIS
+        % watcher --dir . -- osascript -e 'tell application "Google Chrome" to reload active tab of window 1'
 
-App::watcher installation is straightforward. If your CPAN shell is set up,
-you should just be able to do
+            --dir=.      Diretory to watch.
+            --signal=HUP Sending signal to restart(Default: TERM)(EXPERIMENTAL)
+            --send_only  Sending signal without fork/exec(EXPERIMENTAL)
+            -h --help    show this help
 
-% cpan App::watcher
+DESCRIPTION
+    This command watches the directory updates, and run the commands.
 
-Download it, unpack it, then build it as per the usual:
+Sending SIGHUP without restart process
+    (EXPERIMENTAL)
 
-% perl Makefile.PL
-% make && make test
+    watcher can send SIGHUP without process restarting.
 
-Then install it:
+        % watcher --signal=HUP --send_only -- ...
 
-% make install
+AUTHOR
+    Tokuhiro Matsuno <tokuhirom AAJKLFJEF@ GMAIL COM>
 
-DOCUMENTATION
+SEE ALSO
+    Filesys::Notify::Simple
 
-App::watcher documentation is available as in POD. So you can do:
+LICENSE
+    Copyright (C) Tokuhiro Matsuno
 
-% perldoc App::watcher
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
