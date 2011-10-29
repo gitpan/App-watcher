@@ -1,29 +1,11 @@
 NAME
     watcher - watch the file updates
 
-SYNOPSIS
-        % watcher --dir . -- osascript -e 'tell application "Google Chrome" to reload active tab of window 1'
-
-            --dir=.      Diretory to watch.
-            --signal=HUP Sending signal to restart(Default: TERM)(EXPERIMENTAL)
-            --send_only  Sending signal without fork/exec(EXPERIMENTAL)
-            -h --help    show this help
-
 DESCRIPTION
-    This command watches the directory updates, and run the commands.
-
-Sending SIGHUP without restart process
-    (EXPERIMENTAL)
-
-    watcher can send SIGHUP without process restarting.
-
-        % watcher --signal=HUP --send_only -- ...
+    See watcher
 
 AUTHOR
     Tokuhiro Matsuno <tokuhirom AAJKLFJEF@ GMAIL COM>
-
-SEE ALSO
-    Filesys::Notify::Simple
 
 LICENSE
     Copyright (C) Tokuhiro Matsuno

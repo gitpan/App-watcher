@@ -20,11 +20,11 @@ no_index:
 provides:
   App::watcher:
     file: lib/App/watcher.pm
-    version: 0
+    version: 0.07
 requires:
   Filesys::Notify::Simple: 0
   Linux::Inotify2: 0
   perl: 5.008008
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.06
+version: 0.07
