@@ -3,17 +3,17 @@ abstract: 'watch the file updates'
 author:
   - 'Tokuhiro Matsuno <tokuhirom AAJKLFJEF@ GMAIL COM>'
 build_requires:
-  Test::More: 0.98
+  Test::More: '0.98'
 configure_requires:
-  CPAN::Meta: 0
-  CPAN::Meta::Prereqs: 0
-  Module::Build: 0.38
+  CPAN::Meta: '0'
+  CPAN::Meta::Prereqs: '0'
+  Module::Build: '0.38'
 dynamic_config: 0
-generated_by: 'Minilla/v0.11.0, CPAN::Meta::Converter version 2.133380'
+generated_by: 'Minilla/v0.13.0, CPAN::Meta::Converter version 2.140640'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: App-watcher
 no_index:
   directory:
@@ -28,16 +28,17 @@ no_index:
 provides:
   App::watcher:
     file: lib/App/watcher.pm
-    version: 0.09
+    version: '0.10'
+recommends:
+  Linux::Inotify2: '0'
 requires:
-  Filesys::Notify::Simple: 0
-  Linux::Inotify2: 0
-  perl: 5.008008
+  Filesys::Notify::Simple: '0'
+  perl: '5.008008'
 resources:
   bugtracker: https://github.com/tokuhirom/App-watcher/issues
   homepage: https://github.com/tokuhirom/App-watcher
   repository: git://github.com/tokuhirom/App-watcher.git
-version: 0.09
+version: '0.10'
 x_contributors:
   - 'issm <issmxx@gmail.com>'
   - 'Neil Bowers <neil@bowers.com>'
